@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+   void OnTriggerEnter2D(Collider2D other) {
+       
+   
+   
+    Debug.Log("Ouch");
+   }
+   
+   void OnCollisionEnter2D(Collision2D other) 
+   {
+      
+    Debug.Log("What was that?!");
+   }
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
